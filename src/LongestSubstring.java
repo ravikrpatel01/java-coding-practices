@@ -11,6 +11,9 @@ public class LongestSubstring {
         return true;
     }
     public static String findLongestSubstring(String str) {
+        if (str.length() == 1) {
+            return str;
+        }
         int size = 0;
         String result = "";
         for (int i = 0; i < str.length()-1; i++) {
@@ -28,7 +31,7 @@ public class LongestSubstring {
         return result;
     }
     public static void main(String[] args) {
-        String str = "chasmams";
+        String str = "c";
         String result = findLongestSubstring(str);
         System.out.println(result);
     }
